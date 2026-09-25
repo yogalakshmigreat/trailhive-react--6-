@@ -1,0 +1,129 @@
+.section2__block {
+  position: relative;
+  padding: 90px 0;
+  overflow: hidden;
+}
+
+.section2__block--photo {
+  background-size: cover;
+  background-position: center;
+}
+
+.section2__block--dark {
+  background-color: #232e26;
+  background-size: cover;
+  background-position: center;
+}
+
+.section2__content {
+  position: relative;
+  z-index: 1;
+}
+
+.section2__eyebrow {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: #cfe0d3;
+  margin-bottom: 20px;
+}
+
+.section2__quote {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #d9efde;
+  max-width: 760px;
+  margin-bottom: 20px;
+}
+
+.section2__author {
+  font-size: 16px;
+  font-weight: 600;
+  color: #d9efde;
+  margin-bottom: 28px;
+}
+
+.section2__block--photo .btn--mint {
+  background: #d9efde;
+  color: #232e26;
+  border: 1.5px solid #d9efde;
+}
+
+.section2__trusted {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.section2__trusted p {
+  font-size: 15px;
+  color: #d9efde;
+  margin-bottom: 32px;
+}
+
+.section2__brands {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 28px 56px;
+}
+
+/* Every logo sits in an identical fixed-height slot and is centered
+   both ways, so different logo sizes line up on one visual centerline. */
+.section2__brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+}
+
+.section2__brand-img {
+  display: block;
+  height: auto;
+  width: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 700px) {
+  .section2__block {
+    padding: 56px 0;
+  }
+
+  .section2__quote {
+    font-size: 22px;
+  }
+
+  .section2__brands {
+    gap: 24px 40px;
+  }
+
+  .section2__trusted {
+    margin-top: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section2__block {
+    padding: 40px 0;
+  }
+
+  .section2__quote {
+    font-size: 19px;
+  }
+
+  .section2__brands {
+    gap: 20px 32px;
+  }
+
+  .section2__brand {
+    height: 32px;
+  }
+
+  .section2__brand-img {
+    max-width: 96px;
+  }
+
+}
